@@ -15,7 +15,7 @@ suite('Proper Upper', function() {
 
 
   test('all uppercase', function(done) {
-    var ugly = 'bill murray';
+    var ugly = 'BILL MURRAY';
     var gold = 'Bill Murray';
     var pretty = toProperUpper(ugly);
 
@@ -26,7 +26,7 @@ suite('Proper Upper', function() {
 
 
   test('random case', function(done) {
-    var ugly = 'bill murray';
+    var ugly = 'biLl mUrRAY';
     var gold = 'Bill Murray';
     var pretty = toProperUpper(ugly);
 
