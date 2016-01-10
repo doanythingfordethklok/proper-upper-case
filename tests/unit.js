@@ -34,4 +34,25 @@ suite('Proper Upper', function() {
 
     done();
   });
+
+  test('hyphened words', function(done) {
+    var ugly = "sir francis-smiTh-yOrkshire";
+    var gold = "Sir Francis-Smith-Yorkshire";
+    var pretty = toProperUpper(ugly);
+
+    assert.equal(pretty, gold, 'String should be formatted properly.');
+
+    done();
+  });
+
+  test('apostrophed words', function(done) {
+    var ugly = "chips o'toule";
+    var gold = "Chips O'Toule";
+    var pretty = toProperUpper(ugly);
+
+    assert.equal(pretty, gold, 'String should be formatted properly.');
+
+    done();
+  });
+
 });
