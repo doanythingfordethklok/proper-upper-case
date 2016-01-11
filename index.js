@@ -1,8 +1,8 @@
 module.exports = function(str, sep) {
-	str = (str || '').toString().toLowerCase();
+  str = (str || '').toString().toLowerCase();
 
-	sep = Array.isArray(sep) ? sep : (sep ? [sep] : []);
-	sep.push('\\s');
+  sep = Array.isArray(sep) ? sep : (sep ? [sep] : []);
+  sep.push('\\s');
 
   var r = new RegExp('(?:^|' + sep.join('|') + ')\\S', 'g');
 
